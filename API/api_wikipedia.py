@@ -22,4 +22,4 @@ for j, k in country_dict.items():
 df = pd.DataFrame(country_dict)
 
 # save raw data to .csv
-df.to_csv('../data/countries_raw.csv')
+df.to_csv('../data/countries_raw.csv', index=False)
