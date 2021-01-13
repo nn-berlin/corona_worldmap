@@ -1,2 +1,5 @@
 .ipynb_checkpoints/
 .vscode/
+DB/db_credentials.py
+.gitignore
+DB/__pycache__/
