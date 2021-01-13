@@ -1,5 +1,9 @@
 .ipynb_checkpoints/
 .vscode/
-DB/db_credentials.py
-.gitignore
+API/__pycache__/
+data/*.txt
+datamanagement/__pycache__/
 DB/__pycache__/
+DB/db_credentials.py
+filemanagement/__pycache__/
+.gitignore
