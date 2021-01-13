@@ -15,7 +15,7 @@ filename = to_file(data, ts, path, kind)
 
 # upload to s3-bucket
 bucket = 'berlincoronabucket'
-s3_upload(path + filename, bucket, filename)
+#s3_upload(path + filename, bucket, filename)
 
 # transform data (dict -> dataframe)
 df = to_transform(data, ts)
