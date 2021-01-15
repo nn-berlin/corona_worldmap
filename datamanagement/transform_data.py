@@ -5,7 +5,7 @@ from datetime import datetime as dt
 def to_transform(data, download_ts):
     summary = data['Countries']
     df = pd.DataFrame(summary)
-    df['Date'] = df['Date'].map(lambda x: dt.strptime(x, '%Y-%m-%dT%H:%M:%SZ').strftime('%m-%d-%Y %H:%M:%S'))
+    df['Date'] = df['Date'].map(lambda x: dt.strptime(x, '%Y-%m-%dT%H:%M:%S.%fZ').strftime('%m-%d-%Y %H:%M:%S'))
     df['Country'] = df['Country'].apply(lambda x: x.replace("'", ''))
     df.loc[df[df.Country == 'Namibia'].index,'CountryCode'] = 'NA'
     df = df[df['CountryCode'] != 'RE']
@@ -29,7 +29,7 @@ def to_transform(data, download_ts):
 def old_files_to_transform(df):
     df = df
     df = df[df['Country'] != 'Global']
-    df['Date'] = df['Date'].map(lambda x: dt.strptime(x, '%Y-%m-%dT%H:%M:%SZ').strftime('%m-%d-%Y %H:%M:%S'))
+    df['Date'] = df['Date'].map(lambda x: dt.strptime(x, '%Y-%m-%dT%H:%M:%S.%fZ').strftime('%m-%d-%Y %H:%M:%S'))
     df['Country'] = df['Country'].apply(lambda x: x.replace("'", ''))
     df.loc[df[df.Country == 'Namibia'].index,'CountryCode'] = 'NA'
     df = df[df['CountryCode'] != 'RE']

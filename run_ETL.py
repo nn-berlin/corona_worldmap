@@ -9,7 +9,7 @@ from DB.fill_tb_dailysummary import to_DB
 data, ts = download_data()
 
 # save raw data (structure dict) to data-folder
-path = './data/'
+path = '/home/ec2-user/corona_worldmap/data/'
 kind = 'raw'
 filename = to_file(data, ts, path, kind)
 
@@ -20,6 +20,6 @@ bucket = 'berlincoronabucket'
 # transform data (dict -> dataframe)
 df = to_transform(data, ts)
 
-# to do: fill DB-table daily_summary
+# fill DB-table daily_summary
 to_DB(df)
 

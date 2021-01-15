@@ -1,6 +1,10 @@
 .ipynb_checkpoints/
 .vscode/
 API/__pycache__/
+aws_flask_app/__pycache__/
+aws_flask_app/flaskenv/
+aws_flask_app/db_credentials.py
+aws_flask_app/.ebignore
 data/*.txt
 datamanagement/__pycache__/
 DB/__pycache__/
