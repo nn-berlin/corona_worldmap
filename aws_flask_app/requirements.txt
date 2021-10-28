@@ -14,6 +14,7 @@ click==7.1.2
 colorama==0.4.3
 cryptography==3.3.1
 dash==1.18.1
+dash-bootstrap-components==0.11.1
 dash-core-components==1.14.1
 dash-html-components==1.1.1
 dash-renderer==1.8.3
@@ -42,7 +43,6 @@ psycopg2-binary==2.8.6
 pycparser==2.20
 PyNaCl==1.4.0
 pyrsistent==0.17.3
-pyspark==3.0.1
 python-dateutil==2.8.1
 pytz==2020.5
 PyYAML==5.3.1
